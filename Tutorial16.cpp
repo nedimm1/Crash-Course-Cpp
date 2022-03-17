@@ -9,7 +9,7 @@ using namespace std;
 
 //this is my function, in order to create it you just type void and give it a name that reflects...
 // what that function is gonna be used for. For this example its gonna be used to display a welcome message
-/*void welcome(string name) { // and now its time to give this function a purpose
+void welcome(string name) { // and now its time to give this function a purpose
 
     cout << "welcome to *my* program" <<  name << endl;
     
@@ -18,7 +18,7 @@ using namespace std;
 void goodbye() {
 
     cout << "goodbye from my program" << endl;
-};*/
+};
 
 
 /*int main() {
