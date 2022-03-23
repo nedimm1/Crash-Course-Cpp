@@ -9,7 +9,7 @@ using namespace std;
 
 
 
-int main ()
+/*int main ()
 {    
     char itemlist;
     int price;
@@ -89,4 +89,50 @@ int main ()
  
 cout << endl;
  
+}*/
+
+//shoping simulator3.0
+
+
+
+ 
+int main(){
+
+    enum class Items{chips, soda, bread, nutela};
+    Items pick;
+    
+
+    cout << "welcome to myprogrammart.com" << endl;
+    cout << "what woud you like to buy?" << endl;
+    cout << "list of items:\nbag of chips 5$(C)\nbottle of Soda 7.99$(S)\nbread 9.99$ (B)\nNutela 15.99$ (N)\n" << endl;
+    
+    cin >> pick;
+
+    switch(pick){
+        case Items::chips:
+        cout << "chips hase been added to the cart ";
+        break;
+        case Items::soda:
+        cout << "soda has been added to the cart ";
+        break;
+        case Items::bread:
+        cout << "bread has been added to the cart";
+        break;
+        case Items::nutela:
+        cout << "nutela has been added to the cart";
+        break;
+        default:
+        cout << "we dont have that item, pick a item from the list please";
+    }
+
+
+
+
+
+
+
+
+
+    cout << endl;
+
 }
