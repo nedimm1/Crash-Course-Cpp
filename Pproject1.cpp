@@ -10,7 +10,7 @@ using namespace std;
 
 struct Item {
     string name;
-    char symbol;
+    double price;
 };
 
 
@@ -31,8 +31,20 @@ int main(){
     
     
      map<char, Item, double, Item> itemmap;
-  
- 
+
+
+    map<char, Item> items;
+    items['c']=Item{ "chips", 3.99 }; 
+    cout << items.find('c')->second.name;
+    items['s'] =Item{ "soda", 5.99 };
+    cout << items.find('s')->second.name;
+    items['b']=Item{ "bread", 9.99};
+    cout << items.find('b')->second.name;
+    items['n']=Item{ "Nutela", 14.99};
+    cout << items.find('n')->second.name;
+
+
+
 
 
 
