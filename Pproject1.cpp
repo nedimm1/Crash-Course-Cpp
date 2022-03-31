@@ -17,9 +17,9 @@ using namespace std;
  
 int main(){
    
-    char item1;
-    char item2;
-    string anyelse;
+    char item;
+    
+  
    
    
 
@@ -28,7 +28,9 @@ int main(){
     
     cout << "what woud you like to buy something?" << endl;
     
-    switch(item1){
+    cin >> item;
+
+    switch(item){
         case 'c':
         cout << "chips have been added to the cart";
         break;
@@ -36,17 +38,13 @@ int main(){
         cout << "soda has been aded to the cart";
         break;
         case 'b':
-        cout << "soda hass been added to the cart";
+        cout << "bread has been added to the cart";
         break;
         case 'n':
-        cout << "nutela hass been aded to the cart";
+        cout << "nutela has been added to the cart";
+        break;
         default:
-        cout << "we dont have that item, pls pick a item from the list";
+        cout << "we dont have that item, pls pick an item form the list";
+
+        
     }
-    
-    cout << "cart: " << item1;
-
-    
-
-
-}
