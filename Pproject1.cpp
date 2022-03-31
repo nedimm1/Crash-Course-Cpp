@@ -18,13 +18,11 @@ using namespace std;
 int main(){
    
     char item;
-    
-  
-   
    
 
+
     cout << "welcome to myprogrammart.com" << endl;
-    cout << "list of items:\nbag of chips 5$(C)\nbottle of Soda 7.99$(S)\nbread 9.99$ (B)\nNutela 15.99$ (N)\n" << endl;
+    cout << "list of items:\nbag of chips 5$(C)\nbottle of Soda 7$(S)\nbread 9$ (B)\nNutela 15$ (N)\n" << endl;
     
     cout << "what woud you like to buy something?" << endl;
     
@@ -46,5 +44,6 @@ int main(){
         default:
         cout << "we dont have that item, pls pick an item form the list";
 
-        
     }
+    
+}
