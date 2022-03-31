@@ -8,10 +8,6 @@
 using namespace std;
 
 
-struct Item {
-    string name;
-    double price;
-};
 
 
 //shoping simulator3.0
@@ -21,33 +17,36 @@ struct Item {
  
 int main(){
    
-    char pick;
-    
+    char item1;
+    char item2;
+    string anyelse;
+   
    
 
     cout << "welcome to myprogrammart.com" << endl;
-    cout << "what woud you like to buy?" << endl;
     cout << "list of items:\nbag of chips 5$(C)\nbottle of Soda 7.99$(S)\nbread 9.99$ (B)\nNutela 15.99$ (N)\n" << endl;
     
+    cout << "what woud you like to buy something?" << endl;
     
-     map<char, Item, double, Item> itemmap;
+    switch(item1){
+        case 'c':
+        cout << "chips have been added to the cart";
+        break;
+        case 's':
+        cout << "soda has been aded to the cart";
+        break;
+        case 'b':
+        cout << "soda hass been added to the cart";
+        break;
+        case 'n':
+        cout << "nutela hass been aded to the cart";
+        default:
+        cout << "we dont have that item, pls pick a item from the list";
+    }
+    
+    cout << "cart: " << item1;
 
+    
 
-    map<char, Item> items;
-    items['c']=Item{ "chips", 3.99 }; 
-    cout << items.find('c')->second.name;
-    items['s'] =Item{ "soda", 5.99 };
-    cout << items.find('s')->second.name;
-    items['b']=Item{ "bread", 9.99};
-    cout << items.find('b')->second.name;
-    items['n']=Item{ "Nutela", 14.99};
-    cout << items.find('n')->second.name;
-
-
-
-
-
-
-    cout << endl;
 
 }
