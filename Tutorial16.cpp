@@ -24,10 +24,10 @@ void goodbye() {
 /*int main() {
     
 
-    welcome();// and now instead of writing this code here i can make just write my comand and it will...
+    welcome();// and now instead of writing this code here i can  just write my comand and it will...
     //do the thing i told it to do, truly amaezing
 
-    welcome();//and if i write my function again it will print the message twice (obciusly)
+    welcome();//and if i write my function again it will print the message twice (obviusly)
     
 
    cout << endl;
